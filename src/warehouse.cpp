@@ -19,5 +19,5 @@ bool Warehouse::isFull(){
 		total_of_resources += resources[i].getAmount();
 	}
 
-	return ! (total_of_resources <= maxWarehouseStorage());
+	return total_of_resources > maxWarehouseStorage();
 }
