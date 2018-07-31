@@ -1,6 +1,6 @@
 #include "worker.h"
 
-Worker::Worker(std::string n, int l, int a, int e, Resource *c) : name(n), level(l), amount(a), eficiency(e), cost(c){
+Worker::Worker(std::string n, int l, int a, int e, Resource *c) : label(label), level(level), amount(amount), eficiency(eficiency), cost(cost){
 
 }
 
