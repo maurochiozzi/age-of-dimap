@@ -20,6 +20,6 @@ public:
 	~Resource();
 
 	int getQuantity();
-}
+};
 
 #endif

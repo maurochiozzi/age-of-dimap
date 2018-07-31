@@ -2,6 +2,7 @@
 #define WAREHOUSE_H
 
 #include <string>
+#include "resource.h"
 
 class Warehouse{
 public:

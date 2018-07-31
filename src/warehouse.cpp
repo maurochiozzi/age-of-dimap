@@ -1,7 +1,7 @@
 #include "warehouse.h"
 
 Warehouse::Warehouse(std::string label) : label(label){
-	resource = new (int) * 5;
+	//resource = new (int) * 5;
 }
 
 Warehouse::~Warehouse(){
