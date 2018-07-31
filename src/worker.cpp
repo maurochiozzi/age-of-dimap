@@ -11,3 +11,7 @@ Worker::~Worker(){
 int Worker::get_collected_res(){
 	return amount * eficiency * level;
 }
+
+int Worker::getAmount(){
+	return amount;
+}

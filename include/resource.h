@@ -14,12 +14,12 @@ public:
 	// food
 	std::string label;
 	// Amount of resource
-	int quantity;
+	int amount;
 
 	Resource(std::string label);
 	~Resource();
 
-	int getQuantity();
+	int getAmount();
 };
 
 #endif

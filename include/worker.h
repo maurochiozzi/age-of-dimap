@@ -23,6 +23,8 @@ public:
 
 	int get_collected_res();
 
+	int getAmount();
+
 };
 
 
