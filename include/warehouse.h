@@ -8,7 +8,7 @@ class Warehouse{
 public:
 	// Warehouse label
 	std::string label;
-	// Resouces that will be stored in the warehouse
+	// Resources that will be stored in the warehouse
 	// 5 in total. See resource.h for more information
 	Resource *resources;
 	// Warehouse level. Higher the level, higher the capacity of storage
