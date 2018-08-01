@@ -1,0 +1,58 @@
+-As facções do jogo seriam os setores da ufrn (setor, departamento, secretaria, whatever)
+-Recurso global
+-Cada "setor" teria resursos específicos para conseguir o recurso global
+-A frequencia de captação podia ser nivelada pela quantidade (eficiência)
+-Heróis do setor
+-Unidades específicas pra cada setor
+-Alunos dos setores podem upar e virar integrantes de projeto, ganhando novas habilidades
+
+-DMP pode ser um depósito de objetos descartados pelos outros setores
+
+-BCZM pode ser uma fonte de experiência para unidades que chegarem lá, com preenchimento periódico
+
+-Unidades globais:
+  -Turista de curso
+    -Explorador, para encontrar novas áreas e estruturas no mapa
+  -Gato
+    -O aluno vira gato se passar muito tempo sem upar e passa a consumir recursos do departamento
+    -GATOS PROCRIAM 
+  -Servidor
+    -
+
+-Setor 2:
+  -Catadores de miçanga (cata recurso especifico)
+  -Vendedores de arte na praia (transforma recurso especifico em global)
+  
+-IMD:
+  -Programadores de Mining Machines (cata recurso especifico)
+  -Selling bots (transforma recurso especifico em global)
+  -Começa com o CIVT e o explorador pode achar o NPITI pra começar a trabalhar com hardware
+  
+-NTI:
+  -Ladrões de recurso da CAPES
+  -Venda de energia solar
+  -Heroi: Luiz Guilherme
+  -Tecnologias: foguetinho, carrinho, bomba, forno...
+  -O explorador pode achar o DeGeo pra começar a minerar petróleo (adição à energia solar)
+  
+-Educação física:
+  -Unidades fortes que não batem de longe
+  -Treinam pra ficar mais fortes
+  -coletam recurso pra fazer whey (ovo e amendoim)
+  -ganham dinheiro vendendo whey protein
+  -O explorador pode achar o DNUT pra aprimorar a fórmula do Whey
+  
+-Musica
+  -Os bardos do rolé
+  -Passam o dia tocando pra ganhar umas moeda
+  -Ataque especial: tocar em ressonância pra stunar a galera estourando os timpanos
+  -Unidades que buffam os aliados
+  -Podem achar o DeArt e ganhar unidades dançarinas, pra ganhar mais dinheiro e os atores pra converter unidades
+  
+-Estruturas:
+  -Especificas
+    -Salas de aula
+    -Laboratórios
+  -Globais
+    -DMP
+    -BCZM
