@@ -1,35 +1,23 @@
-#ifndef HOUSE_H
-#define HOUSE_H
+#include "house.h"
 
-#include <string>
-#include "worker.h"
+House::House(std::string label) : label(label){
+	//resource = new (int) * 5;
+}
 
-/*
-	Houses are to "store" villagers (workers for now)
+House::~House(){
+	delete [] workers;
+}
 
-	Jordy Araujo
-*/
-class House{
-public:
-	// The label that will be displayed in the game
-	std::string label;
-	// House level
-	int level;
-	// Workers that will be stored in the house
-	// See worker.h for more information 
-	Worker *workers;
-	// Worker type; will be defined latter on
-	int type;
-	// Amount of houses built
-	int amount_of_house;
-	// This represents the cost to train a worker (or buy, or whatever :P)
-	int cost;
+int House::maxHouseStorage(){
+	return level * amount_of_house;
+}
 
-	House(std::string label);
-    ~House();
+bool House::isFull(){
+	int total_of_workers = 0;
 
-	int maxHouseStorage();
-    bool isFull();
-};
+	for(int i = 0; i < 5; i++){
+		total_of_workers += workers[i].getAmount();
+	}
 
-#endif
+	return ! (total_of_workers <= maxHouseStorage());
+}

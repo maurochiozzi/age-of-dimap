@@ -1,9 +1,25 @@
-#include "resource.h"
+#ifndef RESOURCE_H
+#define RESOURCE_H
 
-Resource::Resource(std::string label) : label(label){
+#include <string>
 
-}
+class Resource{
+public:
+	// Label of the resource;
+	// Can be:
+	// wood
+	// metal
+	// clay
+	// rock
+	// food
+	std::string label;
+	// Amount of resource
+	int amount;
 
-int Resource::getAmount(){
-	return amount;
-}
+	Resource(std::string label);
+	~Resource();
+
+	int getAmount();
+};
+
+#endif
