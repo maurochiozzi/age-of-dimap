@@ -1,29 +1,23 @@
-#ifndef BARRACK_H
-#define BARRACK_H
+#include "barrack.h"
 
-#include <string>
-#include "warrior.h"
+Barrack::Barrack(std::string label) : label(label){
+	//warrior = new (int) * 5;
+}
 
-class Barrack{
-public:
-	// Barrack label
-	std::string label;
-	// Warriors that will be stored in the warehouse
-	// 5 in total. See warrior.h for more information
-	Warrior * warriors;
-	// Warehouse level. Higher the level, higher the capacity of storage
-	int level;
-	// Quantity of barracks built
-	int amount_of_barracks;
-	// Cost to build one barrack
-	int cost;
+Barrack::~Barrack(){
+	delete [] warriors;
+}
 
-	Barrack(std::string label);
-	~Barrack();
-	
-	int maxBarrackStorage();
-	bool isFull();
+int Barrack::maxBarrackStorage(){
+	return level * amount_of_barrack;
+}
 
-};
+bool Barrack::isFull(){
+	int total_of_warriors = 0;
 
-#endif
+	for(int i = 0; i < 5; i++){
+		total_of_warriors += warriors[i].getAmount();
+	}
+
+	return total_of_warriors > maxBarrackStorage();
+}

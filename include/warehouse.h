@@ -1,29 +1,23 @@
-#ifndef WAREHOUSE_H
-#define WAREHOUSE_H
+#include "warehouse.h"
 
-#include <string>
-#include "resource.h"
+Warehouse::Warehouse(std::string label) : label(label){
+	//resource = new (int) * 5;
+}
 
-class Warehouse{
-public:
-	// Warehouse label
-	std::string label;
-	// Resources that will be stored in the warehouse
-	// 5 in total. See resource.h for more information
-	Resource *resources;
-	// Warehouse level. Higher the level, higher the capacity of storage
-	int level;
-	// Quantity of warehouses built
-	int amount_of_warehouse;
-	// Cost to build one warehouse
-	int cost;
+Warehouse::~Warehouse(){
+	delete [] resources;
+}
 
-	Warehouse(std::string label);
-	~Warehouse();
-	
-	int maxWarehouseStorage();
-	bool isFull();
+int Warehouse::maxWarehouseStorage(){
+	return level * amount_of_warehouse;
+}
 
-};
+bool Warehouse::isFull(){
+	int total_of_resources = 0;
 
-#endif
+	for(int i = 0; i < 5; i++){
+		total_of_resources += resources[i].getAmount();
+	}
+
+	return total_of_resources > maxWarehouseStorage();
+}
