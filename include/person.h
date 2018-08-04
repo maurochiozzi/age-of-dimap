@@ -13,6 +13,6 @@ public:
 	// Until now, no specific functions
 
 	Person::Person(std::string label);
-}
+};
 
 #endif

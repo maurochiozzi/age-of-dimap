@@ -23,7 +23,7 @@ private:
 
 public:
 	// Constructor requires necessarily the label
-	SelectableObject(std::string label);
+	interface SelectableObject(std::string label);
 
 	// Returns if the object is selected or not. Yeah, until now I don't know any aplication for
 	// this method, but who knows? 
@@ -42,6 +42,6 @@ public:
 	// Returns the actual selected object. It can be null if the player unselected
 	// the actual object and haven't selected other
 	static SelectableObject getSelectedObject();
-}
+};
 
 #endif
