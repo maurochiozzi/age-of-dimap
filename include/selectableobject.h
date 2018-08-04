@@ -3,12 +3,17 @@
 
 #include <string>
 
-// Author: Mauro Chiozzi
+/*
+	This class has all the basics for a selectable object by the user.
 
-class Selectable {
+	Extend this class for all object that you need to be selectable
+
+	Mauro Chiozzi
+*/
+class SelectableObject {
 private:
 	// Stores the selected object by the player
-	static Selectable selectedObject;
+	static SelectableObject selectedObject;
 
 	// The label that will be displayed when the player select the object
 	std::string label;
@@ -18,7 +23,7 @@ private:
 
 public:
 	// Constructor requires necessarily the label
-	Selectable(std::string label);
+	SelectableObject(std::string label);
 
 	// Returns if the object is selected or not. Yeah, until now I don't know any aplication for
 	// this method, but who knows? 
@@ -36,7 +41,7 @@ public:
 
 	// Returns the actual selected object. It can be null if the player unselected
 	// the actual object and haven't selected other
-	static Selectable getSelectedObject();
+	static SelectableObject getSelectedObject();
 }
 
 #endif

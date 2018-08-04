@@ -1,18 +1,20 @@
 #ifndef HOUSE_H
 #define HOUSE_H
 
-#include <string>
 #include "worker.h"
+#include "selectableobject.h"
 
 /*
 	Houses are to "store" villagers (workers for now)
 
 	Jordy Araujo
 */
-class House{
+class House : public SelectableObject {
+private:
+	// house id
+	int id;
+
 public:
-	// The label that will be displayed in the game
-	std::string label;
 	// House level
 	int level;
 	// Workers that will be stored in the house
@@ -25,7 +27,7 @@ public:
 	// This represents the cost to train a worker (or buy, or whatever :P)
 	int cost;
 
-	House(std::string label);
+	House();
     ~House();
 
 	int maxHouseStorage();

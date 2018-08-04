@@ -1,13 +1,19 @@
 #ifndef BARRACK_H
 #define BARRACK_H
 
-#include <string>
 #include "warrior.h"
+#include "selectableobject.h"
 
-class Barrack{
+/*
+	This class represents the barracks of the village
+
+	Mauro Chiozzi
+*/
+class Barrack : public SelectableObject {
+private:
+	// barrack id
+	int id;
 public:
-	// Barrack label
-	std::string label;
 	// Warriors that will be stored in the warehouse
 	// 5 in total. See warrior.h for more information
 	Warrior * warriors;
@@ -18,7 +24,7 @@ public:
 	// Cost to build one barrack
 	int cost;
 
-	Barrack(std::string label);
+	Barrack();
 	~Barrack();
 	
 	int maxBarrackStorage();

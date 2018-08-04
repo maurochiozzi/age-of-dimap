@@ -1,13 +1,16 @@
 #ifndef WAREHOUSE_H
 #define WAREHOUSE_H
 
-#include <string>
 #include "resource.h"
+#include "selectableobject.h"
 
-class Warehouse{
+/*
+	Mauro Chiozzi
+*/
+class Warehouse : public SelectableObject {
+private:
+	int id;
 public:
-	// Warehouse label
-	std::string label;
 	// Resources that will be stored in the warehouse
 	// 5 in total. See resource.h for more information
 	Resource *resources;
@@ -18,7 +21,7 @@ public:
 	// Cost to build one warehouse
 	int cost;
 
-	Warehouse(std::string label);
+	Warehouse();
 	~Warehouse();
 	
 	int maxWarehouseStorage();

@@ -1,6 +1,6 @@
 #include "barrack.h"
 
-Barrack::Barrack(std::string label) : label(label){
+Barrack::Barrack() {
 	//warrior = new (int) * 5;
 }
 

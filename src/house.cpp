@@ -1,6 +1,6 @@
 #include "house.h"
 
-House::House(std::string label) : label(label){
+House::House() {
 	//resource = new (int) * 5;
 }
 

@@ -1,17 +1,17 @@
 #ifndef WARRIOR_H
 #define WARRIOR_H
 
-#include <string>
+#include <selectableobject.h>
 
 /*
 	This class represents the behavior of a warrior
 
 	Mauro Chiozzi
 */
-class Warrior{
+class Warrior : public SelectableObject {
+private: 
+	int id;
 public:
-	// The label that will be displayed in the game
-	std::string label;
 	// Warrior's level
 	int level;
 	// The damage the warrior will give in battle
@@ -24,7 +24,7 @@ public:
 	// This represents the cost to train a warrior (or buy, or whatever :P)
 	int cost;
 
-	Warrior(std::string label);
+	Warrior();
 
 	int amountOfDamage();
 };

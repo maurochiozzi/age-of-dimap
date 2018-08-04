@@ -1,6 +1,6 @@
 #include "warehouse.h"
 
-Warehouse::Warehouse(std::string label) : label(label){
+Warehouse::Warehouse() {
 	//resource = new (int) * 5;
 }
 

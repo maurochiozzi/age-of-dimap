@@ -1,6 +1,6 @@
 #include "warrior.h"
 
-Warrior::Warrior(std::string label) : label(label){
+Warrior::Warrior() {
 	// do nothing
 }
 

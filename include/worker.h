@@ -1,13 +1,20 @@
 #ifndef _WORKER_H_
 #define _WORKER_H_
 
-#include <string>
 #include "resource.h"
+#include "selectableobject.h"
 
-class Worker{
+/*
+	This class has some characteristics for the worker
+
+	Jordy Araujo
+*/
+class Worker : public SelectableObject {
+private:
+	// Worker Id
+	int id;
+
 public:
-	// The label that will be displayed in the game
-	std::string label;
 	//Worker's level
 	int level;
 	//Amount of workers
@@ -17,7 +24,7 @@ public:
 	// This represents the cost to train a warrior (or buy, or whatever :P)
 	Resource * cost;
 
-	Worker(std::string, int, int, int, Resource *);
+	Worker(int, int, int, Resource *);
       
 	~Worker();
 
