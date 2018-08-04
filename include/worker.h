@@ -1,15 +1,16 @@
 #ifndef _WORKER_H_
 #define _WORKER_H_
 
+#include <string.h>
 #include "resource.h"
-#include "selectableobject.h"
+#include "person.h"
 
 /*
 	This class has some characteristics for the worker
 
 	Jordy Araujo
 */
-class Worker : public SelectableObject {
+class Worker : public Person {
 private:
 	// Worker Id
 	int id;
@@ -24,7 +25,7 @@ public:
 	// This represents the cost to train a warrior (or buy, or whatever :P)
 	Resource * cost;
 
-	Worker(int, int, int, Resource *);
+	Worker(std::string label, int level, int amount, int eficiency, Resource *cost);
       
 	~Worker();
 

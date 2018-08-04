@@ -1,7 +1,7 @@
 #include "warrior.h"
 
-Warrior::Warrior() {
-	// do nothing
+Warrior::Warrior(std::string label) {
+	Person(label);
 }
 
 int Warrior::amountOfDamage(){

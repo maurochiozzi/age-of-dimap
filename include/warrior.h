@@ -1,14 +1,15 @@
 #ifndef WARRIOR_H
 #define WARRIOR_H
 
-#include <selectableobject.h>
+#include <string.h>
+#include "person.h"
 
 /*
 	This class represents the behavior of a warrior
 
 	Mauro Chiozzi
 */
-class Warrior : public SelectableObject {
+class Warrior : public Person {
 private: 
 	int id;
 public:
@@ -24,7 +25,7 @@ public:
 	// This represents the cost to train a warrior (or buy, or whatever :P)
 	int cost;
 
-	Warrior();
+	Warrior(std::string label);
 
 	int amountOfDamage();
 };
